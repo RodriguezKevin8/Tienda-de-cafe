@@ -6,4 +6,4 @@ Gabriel Alejandro Rendon Alas,
 Jairo Vladimir Erazo Montano,
 Kevin Daniel Rodriguez Martinez
 
-proyecto de diseño web elaborado con tecnología de HTML, CSS y Bootstrap.
+Proyecto de diseño web elaborado con tecnología de HTML, CSS y Bootstrap.
