@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafetería Delicia</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Estilos personalizados */
+      body {
+        font-family: "Roboto", Arial, sans-serif;
+      }
+
+      .navbar {
+        background-color: #563d7c;
+      }
+
+      .navbar-brand,
+      .navbar-nav .nav-link {
+        color: #fff;
+        text-align: center;
+      }
+
+      .jumbotron {
+        background-image: url("https://example.com/imagen-principal.jpg");
+        background-size: cover;
+        height: 400px;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: auto;
+      }
+
+      .contact-form {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#">Cafetería Delicia</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#galeria">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Sección principal -->
+    <div
+      id="inicio"
+      class="jumbotron jumbotron-fluid text-white text-center"
+      style="background-color: #b686ff"
+    >
+      <div class="container">
+        <h1 class="display-4">Bienvenidos a Cafetería Delicia</h1>
+        <p class="lead">
+          Disfruta del mejor café y pasteles en un ambiente acogedor.
+        </p>
+        <a class="btn btn-light btn-lg" href="#galeria">Ver Galería</a>
+      </div>
+    </div>
+
+    <!-- Galería de imágenes -->
+    <div id="galeria" class="container mt-5">
+      <h2 class="text-center">Nuestra Galería</h2>
+      <div class="row gallery">
+        <div class="col-md-4">
+          <img src="./multimedia/cafe user.jpg" alt="Imagen 1" />
+        </div>
+        <div class="col-md-4">
+          <img src="./multimedia/cafe.jpg" alt="Imagen 2" />
+        </div>
+        <div class="col-md-4">
+          <img src="./multimedia/Capuccino.png" alt="Imagen 3" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulario de contacto -->
+    <div id="contacto" class="container mt-5">
+      <h2 class="text-center">Contáctanos</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                name="nombre"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje:</label>
+              <textarea
+                class="form-control"
+                id="mensaje"
+                name="mensaje"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Enviar Mensaje
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
